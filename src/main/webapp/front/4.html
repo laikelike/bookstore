@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XhTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=1024" />
+<title>我的购物袋</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<SCRIPT type=text/javascript src="js/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/newComment.js"></SCRIPT>
+<link rel="stylesheet" href="style/public.css" type="text/css" />
+
+</head>
+<body>
+<!-- top1 -->
+<div class="top1">
+	<div class="top1_1">
+   	欢迎您登云起点网上商城！用户名：<input type="text" name="name" class="inputsty"> 密码：<input type="text" name="password" class="inputsty"> <a href="#">忘记密码?</a> 
+   	<input type="button" value="登录" class="btn1">  <input type="button" value="注册" class="btn1"> 
+    </div>
+	<div class="top1_2">
+		<div class="top1_2_l">
+            <ul class="yudingCon">
+                <li>书名:<input type="text" name="" class="kuang" />  </li>
+            	<li>作者:<input type="text" name="" class="kuang" />  </li>
+            	<li class="ribtn"><input type="image" src="images/btn.gif" class="btn"/></li>
+		</ul>
+        </div>
+		<div class="top1_2_r">
+        	<ul class="other">
+            	<li><a href="#"><img src="images/car.gif"><br />购物车</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />订单查询  </a></li>
+				<li><a href="#"><img src="images/car.gif"><br />我的空间</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />购书服务 </a></li>
+            </ul>
+            <ul class="menu">
+            	<li><a href="index.html">首页</a></li>
+                <li><a href="prolist.html">畅销</a></li>
+                <li><a href="pro_show.html">文学</a></li>
+                <li><a href="#">旺旺书系</a></li>
+                <li><a href="#">文化</a></li>
+                <li><a href="#">经营</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+<div class="content">
+    	  <div class="title4"></div>
+        <!-- 购物袋 -->
+		<dl id="myCartTitle">
+        	<dt>宝贝评论</dt>
+        	<dd><a href="#"></a></dd> 
+  </dl>	<div class="clear"><img src="#" width="1" height="1"></div>
+		  <div class="pingl">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td align="center" class="titname">店<br />
+			    铺<br />信<br />
+			    息</td>
+				<td align="left"><img src="images/img.jpg"></td>
+				<td class="fccc"><h3 class="sjname">特点是图画与文字有机配合，这在当时同类教科书中是很新颖的作法。</h3> 
+				被评论买家：<a href="#">合，这在当时同类教科书中是很新颖的作法。</a><br />
+				宝贝与描述相符</td>
+			  </tr>
+		  </table>
+		</div>
+		<div class="pltext">店铺动态评分</div>
+		<div class="pinglt">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr><td width="30%" align="center">宝贝</td>
+				<td width="70%" align="left">宝贝与描述相符</td>
+				</tr>
+		 	  <tr>
+				<td align="center"><img src="images/img.jpg"></td>
+				<td class="tit">
+					<div id="hudong" class="bor1">
+					  <div class="kd">
+						<div style="border: #f5d174 1px solid;background: #ffffe6 0px 0px;"	id="zfid" class="kd1">
+						  <div class="star0521">
+							  <div>
+								<ul class="star">
+								  <li id="starli">
+									<div style="width: 30px; height: 17px; cursor: pointer" 
+					  onmouseover=selstar(-1); onmouseout=outstar(); onclick=clickstar(-1);></div>
+									<div style="width: 30px; height: 17px; cursor: pointer" 
+					  onmouseover=selstar(0); onmouseout=outstar(); onclick=clickstar(0);></div>
+									<div style="width: 30px; height: 17px; cursor: pointer" 
+					  onmouseover=selstar(1); onmouseout=outstar(); onclick=clickstar(1);></div>
+									<div style="width: 30px; height: 17px; cursor: pointer" 
+					  onmouseover=selstar(2); onmouseout=outstar(); onclick=clickstar(2);></div>
+									<div style="width: 30px; height: 17px; cursor: pointer" 
+					  onmouseover=selstar(3); onmouseout=outstar(); 
+					onclick=clickstar(3);></div>
+								  </li>
+								</ul>
+							  </div>
+						  <SPAN style="COLOR: gray" id=disstar>点击星星打分</SPAN> </div>
+						</div>
+					  </div>
+					</div>
+					<div class="clear"><img src="#" width="1" height="1"></div>
+					<br />
+					<label>
+				  <textarea name="textarea" cols="70" rows="10" clas="textarea" >还可以输入500字</textarea>
+				  </label>
+				  <div class="niming"><span style="float:left; display:block; width:100px"><a href="#"><img src="images/btn5.gif"></a></span>
+							   <span style="float:right;display:block; width:200px; text-align:right;">  <input name="Input" type="checkbox" value="" />				
+				    匿名提交				
+				    <input name="Input2" type="checkbox" value="" />
+			   晒到个人主页</span></div></td>
+			  </tr>
+		  </table>
+		  	<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+				<tr class="thbg">
+				  <td colspan="3"><strong>店铺动态评分</strong></td>
+				</tr>
+		 	  <tr>
+				<td width="11%" align="right">卖家服务态度：</td>
+				<td width="33%"><label>
+				  <input type="radio" name="radiobutton" value="radiobutton" />
+				</label>
+			    满意 
+			    <input type="radio" name="radiobutton" value="radiobutton" /> 
+			    一般
+			    <input type="radio" name="radiobutton" value="radiobutton" /> 
+			    很差</td>
+				<td width="56%" rowspan="2" align="center"><img src="images/pic.jpg"> </td>
+			  </tr>
+		 	  <tr>
+		 	    <td align="right">卖家发货速度：</td>
+		 	    <td><label>
+		 	      <input type="radio" name="radiobutton" value="radiobutton" />
+                </label>
+满意 
+<input type="radio" name="radiobutton" value="radiobutton" />
+一般
+<input type="radio" name="radiobutton" value="radiobutton" />
+很差</td>
+	 	      </tr>
+			  	<tr>
+				  <td colspan="3" align="center"><img src="images/tjpl.png"></td>
+				</tr>
+		  </table>
+		</div>
+			
+
+		
+		  	
+</div>
+	<!-- footer -->
+<div class="footer">
+	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+    <ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox nolbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+
+
+
+
+</div>
+<div class="footer1">
+	<img src="images/footer1img.jpg" />
+	<img src="images/footer2img.jpg" /> 
+	<img src="images/footer3img.jpg" />
+	<img src="images/footer4img.jpg" />
+  	<img src="images/footer5img.jpg" />
+	<img src="images/footer6img.jpg" />           
+</div>
+<!-- footer2 -->
+<div class="footer2">
+版权所有：www.xubangyiliao.com<br />
+电话:029-62966051 87811277 传真：029-62966051 陕ICP备1109231号
+</div>
+</body>
+</html>
+

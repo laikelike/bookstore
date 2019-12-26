@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=1024" />
+<title>我的购物袋</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" href="style/public.css" type="text/css" />
+
+</head>
+<body>
+<!-- top1 -->
+<div class="top1">
+	<div class="top1_1">
+   	欢迎您登云起点网上商城！用户名：<input type="text" name="name" class="inputsty"> 密码：<input type="text" name="password" class="inputsty"> <a href="#">忘记密码?</a> 
+   	<input type="button" value="登录" class="btn1">  <input type="button" value="注册" class="btn1"> 
+    </div>
+	<div class="top1_2">
+		<div class="top1_2_l">
+            <ul class="yudingCon">
+                <li>书名:<input type="text" name="" class="kuang" />  </li>
+            	<li>作者:<input type="text" name="" class="kuang" />  </li>
+            	<li class="ribtn"><input type="image" src="images/btn.gif" class="btn"/></li>
+		</ul>
+        </div>
+		<div class="top1_2_r">
+        	<ul class="other">
+            	<li><a href="#"><img src="images/car.gif"><br />购物车</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />订单查询  </a></li>
+				<li><a href="#"><img src="images/car.gif"><br />我的空间</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />购书服务 </a></li>
+            </ul>
+            <ul class="menu">
+            	<li><a href="index.html">首页</a></li>
+                <li><a href="prolist.html">畅销</a></li>
+                <li><a href="pro_show.html">文学</a></li>
+                <li><a href="#">旺旺书系</a></li>
+                <li><a href="#">文化</a></li>
+                <li><a href="#">经营</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+<div class="content">
+    	  <div class="title3"></div>
+        <!-- 购物袋 -->
+        <dl id="myCartTitle">
+        	<dt>请确认您已收到的商品，并打款给卖家</dt>
+        	<dd>&nbsp;</dd>        
+        </dl>
+			<div class="clear"><img src="#" width="1" height="1"></div>
+		<div id="myCartTable">
+		<table width="100%" border="0" cellspacing="" cellpadding="5">
+		  <tr>
+			<th>商品名称</th>
+			<th>单价（元）</th>
+			<th>数量</th>
+			<th>优惠</th>
+			<th>小计（元）</th>
+			<th>赠送积分</th>
+			<th>操作</th>
+		  </tr>
+		  <tr>
+			<td align="left"><div class="shpic"><img src="images/img.jpg" /></div><span class="shname"><a href="#">特点是图画与文字有机配合，这在当时同类教科书中是很新颖的作法。</a><br />
+		   <span class="fccc"> 颜色：极乐绿 尺码：170/</span>92A</span></td>
+			<td align="center">售 价 ：59.00<span class="fccc"><del> <br />
+		    市场价：
+          59.00 </del></span></td>
+			<td align="center"><a onclick="ajaxchange('changenum',new Array((parseInt($('#num_2073165120748').val())-1),'207316','51','20748'),false)" title="减-" style="cursor:pointer" class="btn_minus_s">-</a>  <input name="text" type="text" class="text_num"id="num_2073165120748" onchange="ajaxchange('changenum',new Array(this.value,'207316','51','20748'),false)" value="1" size="2" maxlength="2" autocomplete="off" now_data2073165120748="1"/>
+			<a onclick="ajaxchange('changenum',new Array((parseInt($('#num_2073165120748').val())+1),'207316','51','20748'),false)" title="加+" style="cursor:pointer" class="btn_plus_s">+</a></td>
+			<td align="center">0.00</td>
+			<td align="center">59.00</td>
+			<td align="center"><span class="cols col-6"><span>0 </span></span></td>
+			<td align="center"><span class="cols col-7"><a onclick="add_favorites('2073165120748','20731651148');" style="cursor:pointer">加入收藏</a> | <a onclick="ajaxchange('delete','common_id_20731651148','2073165120748')" style="cursor:pointer">删除</a></span></td>
+		  </tr>
+		  <tr><td colspan="7" align="right" class="zongj">总价：¥59.00元 -
+                        优惠：¥0.00元
+                        <input type="hidden" name="packagehidden" id="packagehidden" value=""> 
+                      = 商品总计(不含运费)：<span class="fred">¥59.00元</span>  获得：0 积分点</td>
+		  </tr>
+		</table>
+	
+		</div> 
+			<div class="pinglt" style="width:788px; padding:0 100px; margin:10px 0 0 0; ">
+			<h1 class="qurtit">确认打款信息确认打款信息确认打款信息确认打款信息确认打款信息</h1>
+			<div class="qurtext"><span class="fonyell">请不要在没收到商品的情况下确认收获，以免被骗</span><br />
+			如果你没收到商品，或出现与商品描述不符等情况，可以去<a href="#">申请退款</a><br />
+			你购买的商品以参加诚信保证计划,拍拍支持先行赔付，点此<a href="#">了解详情</a><br />
+			确认完成收获后，财付通将会把<span class="fred">148.99</span>元直接打到卖家账户。</div>
+			<h1 class="qurtit">财付通安全验证----------------------------------------------------</h1>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="13%" align="right">财付通账户：</td>
+    <td>55668225</td>
+  </tr>
+  <tr>
+    <td align="right">输入支付密码：</td>
+    <td><input name="" type="text" class="inputtext" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="#"> 忘记支付密码？ </a> &nbsp; &nbsp;
+	  <a href="#">无法输入密码</a></td>
+  </tr>
+</table>
+<div class="qurbot"><!--<input  type="button" class="qurbtn"  value="">--><a href="4.html"><img src="images/qurbtn.png"></a></div>
+
+			
+		</div>
+</div>
+	<!-- footer -->
+<div class="footer">
+	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+    <ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox nolbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+
+
+
+
+</div>
+<div class="footer1">
+	<img src="images/footer1img.jpg" />
+	<img src="images/footer2img.jpg" /> 
+	<img src="images/footer3img.jpg" />
+	<img src="images/footer4img.jpg" />
+  	<img src="images/footer5img.jpg" />
+	<img src="images/footer6img.jpg" />           
+</div>
+<!-- footer2 -->
+<div class="footer2">
+版权所有：www.xubangyiliao.com<br />
+电话:029-62966051 87811277 传真：029-62966051 陕ICP备1109231号
+</div>
+</body>
+</html>
+

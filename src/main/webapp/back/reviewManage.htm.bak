@@ -1,0 +1,171 @@
+<html>
+<head>
+<style>
+<!--
+.wr{font-size: 12pt; line-height: 22px}
+.wr1 {	FONT-SIZE: 12px; LINE-HEIGHT: 200%}
+.wr2 {	FONT-SIZE: 14px; LINE-HEIGHT: 200%}
+.wr3 {	FONT-SIZE: 12px}
+.wr4 {	FONT-SIZE: 12px; LINE-HEIGHT: 150%}
+// -->
+</style>
+<title>清韵网上书店后台管理系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body bgcolor="#FFFFDB" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="200" class="wr4"> 
+      <div align="center"></div>
+    </td>
+    <td width="1"><img src="images/point.gif" width="1" height="1"></td>
+    <td class="wr4"> 
+      <div align="center"><b>评论管理</b></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="200" height="30" class="wr4"> 
+      <div align="center"></div>
+    </td>
+    <td width="1" height="30" bgcolor="#000000"><img src="images/point.gif" width="1" height="1"></td>
+    <td height="30"> 
+      <div class="wr4">　　</div>
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td width="200"> 
+      <table border="0" cellspacing="0" cellpadding="2" align="center">
+        <tr> 
+          <td class="wr4"><a href="ReviewApproveSet.htm">评审审批设置</a></td>
+          <td class="wr4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="wr4">未评审评论</td>
+          <td class="wr4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="wr4">图书评论</td>
+          <td class="wr4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别1</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别2</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别3</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别4</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别5</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4"><img src="images/x1.gif" width="4" height="4"> 类别6</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="wr4">&nbsp;</td>
+          <td class="wr4">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+    <td width="1" bgcolor="#000000"><img src="images/point.gif" width="1" height="1"></td>
+    <td> 
+      <table width="440" border="0" cellspacing="1" cellpadding="3" align="center" bgcolor="#000000">
+        <tr bgcolor="#FFFFDB" align="center"> 
+          <td class="wr4" width="130">书名</td>
+          <td class="wr4" width="74">发表时间</td>
+          <td class="wr4" width="133">标题</td>
+          <td class="wr4" width="74">审批意见</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133"><a href="review,htm" target="_blank">标题</a></td>
+          <td class="wr4" width="74" align="center"><a href="reviewManage.htm">同意</a> 
+            <a href="reviewManage.htm">删除</a></td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB"> 
+          <td class="wr4" width="130">&nbsp;</td>
+          <td class="wr4" width="74">&nbsp;</td>
+          <td class="wr4" width="133">&nbsp;</td>
+          <td class="wr4" width="74" align="center">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FFFFDB" align="right"> 
+          <td class="wr4" colspan="4"> 
+            <p>01 02 03 04 05 06 07 08 09 10 &gt;&gt;&gt;</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<script ></script>

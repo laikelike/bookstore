@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XhTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=1024" />
+<title>我的购物袋</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" type="text/css" href="style/orderInfo.css" />
+<link rel="stylesheet" href="style/public.css" type="text/css" />
+
+</head>
+<body>
+<!-- top1 -->
+<div class="top1">
+	<div class="top1_1">
+   	欢迎您登云起点网上商城！用户名：<input type="text" name="name" class="inputsty"> 密码：<input type="text" name="password" class="inputsty"> <a href="#">忘记密码?</a> 
+   	<input type="button" value="登录" class="btn1">  <input type="button" value="注册" class="btn1"> 
+    </div>
+	<div class="top1_2">
+		<div class="top1_2_l">
+            <ul class="yudingCon">
+                <li>书名:<input type="text" name="" class="kuang" />  </li>
+            	<li>作者:<input type="text" name="" class="kuang" />  </li>
+            	<li class="ribtn"><input type="image" src="images/btn.gif" class="btn"/></li>
+		</ul>
+        </div>
+		<div class="top1_2_r">
+        	<ul class="other">
+            	<li><a href="#"><img src="images/car.gif"><br />购物车</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />订单查询  </a></li>
+				<li><a href="#"><img src="images/car.gif"><br />我的空间</a></li>
+				<li><a href="#"><img src="images/car.gif"><br />购书服务 </a></li>
+            </ul>
+            <ul class="menu">
+            	<li><a href="index.html">首页</a></li>
+                <li><a href="prolist.html">畅销</a></li>
+                <li><a href="pro_show.html">文学</a></li>
+                <li><a href="#">旺旺书系</a></li>
+                <li><a href="#">文化</a></li>
+                <li><a href="#">经营</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+<div class="content">
+    	  <div class="title2"></div>
+        <!-- 购物袋 -->
+		<dl id="myCartTitle">
+        	<dt>确认订单信息</dt>
+        	<dd><a href="#">管理收货地址</a></dd> 
+		 </dl>
+			<div class="clear"><img src="#" width="1" height="1"></div>
+		 <div class="address"><!--收货人地址开始--> 
+				<div id=part_consignee>
+				<div class=o_write>
+				<h1>收货人信息&nbsp;<a id=lbtnConsigneeWrite onclick=close_consignee(this) href="javascript:void(0)">[关闭]</a>
+                  <span style="DISPLAY: none"><a style="COLOR: #ff6600" onclick=addNewAddress(this); href="javascript:void(0)">[创建一个新地址]</a></span> 
+                </h1>
+				<div class=middle>
+				<div id=addressListPanel></div>
+				<div id=consignee_addr>
+				<TABLE border=0 cellSpacing=0 width="100%">
+				  <TBODY>
+				  <TR>
+					<TD vAlign=center width=85 align=right><FONT color=red>*</FONT>收货人姓名：</TD>
+					<TD vAlign=center align=left><INPUT onblur=check_addressName() 
+					  id=consignee_addressName class=txt maxLength=20 type=text>&nbsp; </TD></TR>
+				  <TR>
+					<TD vAlign=center align=right><FONT color=red>*</FONT>省　　份：</TD>
+					<TD vAlign=center align=left><SPAN id=consignee_arae><SELECT 
+					  id=consignee_province onchange=changeProvince(this)><OPTION selected 
+						value=-22>请选择</OPTION><OPTION value=1>北京</OPTION><OPTION 
+						value=2>上海</OPTION><OPTION value=3>天津</OPTION><OPTION 
+						value=4>重庆</OPTION><OPTION value=5>河北</OPTION><OPTION 
+						value=6>山西</OPTION><OPTION value=7>河南</OPTION><OPTION 
+						value=8>辽宁</OPTION><OPTION value=9>吉林</OPTION><OPTION 
+						value=10>黑龙江</OPTION><OPTION value=11>内蒙古</OPTION><OPTION 
+						value=12>江苏</OPTION><OPTION value=13>山东</OPTION><OPTION 
+						value=14>安徽</OPTION><OPTION value=15>浙江</OPTION><OPTION 
+						value=16>福建</OPTION><OPTION value=17>湖北</OPTION><OPTION 
+						value=18>湖南</OPTION><OPTION value=19>广东</OPTION><OPTION 
+						value=20>广西</OPTION><OPTION value=21>江西</OPTION><OPTION 
+						value=22>四川</OPTION><OPTION value=23>海南</OPTION><OPTION 
+						value=24>贵州</OPTION><OPTION value=25>云南</OPTION><OPTION 
+						value=26>西藏</OPTION><OPTION value=27>陕西</OPTION><OPTION 
+						value=28>甘肃</OPTION><OPTION value=29>青海</OPTION><OPTION 
+						value=30>宁夏</OPTION><OPTION value=31>新疆</OPTION><OPTION 
+						value=32>台湾</OPTION><OPTION value=42>香港</OPTION><OPTION 
+						value=43>澳门</OPTION><OPTION value=84>钓鱼岛</OPTION></SELECT><SELECT 
+					  id=consignee_city onchange=changeCity(this)><OPTION selected 
+						value=-22>请选择</OPTION></SELECT><SELECT id=consignee_county 
+					  onchange=check_con_area();changeCounty(this)><OPTION selected 
+						value=-22>请选择</OPTION></SELECT></SPAN>&nbsp;&nbsp;注:标“*”的为支持货到付款的地区，<A 
+					  class=link_005AA0 href="http://help.360buy.com/help/question-67.html" 
+					  target=_blank clstag="checkout|keycount|jiesuan|link005aa0">查看货到付款地区</A> 
+					</TD></TR>
+				  <TR>
+					<TD vAlign=center align=right><FONT color=red>*</FONT>地　　址：</TD>
+					<TD vAlign=center align=left><SPAN 
+					  id=consigneeShow_addressName></SPAN><INPUT onblur=check_address() 
+					  style="WIDTh: 327px; MARGIN-LEFT: 2px" id=consignee_address class=txt 
+					  maxLength=50 type=text>&nbsp; </TD></TR>
+				  <TR>
+					<TD vAlign=center align=right><FONT color=red>*</FONT>手机号码：</TD>
+					<TD vAlign=center align=left><INPUT onblur=check_message() 
+					  id=consignee_message class=txt type=text> &nbsp;或者 固定电话： <INPUT 
+					  onblur=check_phone() id=consignee_phone class=txt type=text>&nbsp;<FONT 
+					  color=#000000>用于接收发货通知短信及送货前确认</FONT> </TD></TR>
+				  <TR>
+					<TD vAlign=center align=right>电子邮件：</TD>
+					<TD vAlign=center align=left><INPUT onblur=check_email() 
+					  id=consignee_email class=txt type=text> &nbsp;<FONT 
+					  color=#000000>用来接收订单提醒邮件，便于您及时了解订单状态</FONT> </TD></TR>
+				  <TR>
+					<TD vAlign=center align=right>邮政编码：</TD>
+					<TD vAlign=center align=left><INPUT onblur=check_postcode() 
+					  style="WIDTh: 77px" id=consignee_postcode class=txt type=text>&nbsp;<FONT 
+					  style="MARGIN-LEFT: 53px" color=#000000>有助于快速确定送货地址</FONT> 
+				</TD></TR></TBODY></TABLE></div></div>
+				<div 
+				style="PADDING-BOTTOM: 20px; PADDING-LEFT: 45px; PADDING-RIGhT: 0px; PADDING-TOP: 10px"><A 
+				onclick=addNewAddress(this); 
+				href="#">[添加到常用地址]</A></div>
+				<div class="footstyfooter"><INPUT class="btn0" onclick=savePart_consignee(this) value=保存收货人信息 type=button > 
+				</div></div></div><!--收货人地址结束--> 
+				<!--支付方式及配送方式开始-->
+			<div id=part_payTypeAndShipType>
+			<div class=o_show>
+			<h1>支付及配送方式&nbsp;<A id=linkPayTypeShipType 
+			onclick=showForm_payTypeAndShipType(this); href="javascript:void(0)" 
+			clstag="checkout|keycount|jiesuan|linkpayshiptype">[修改]</A></h1>
+			<div id=updateInfo_payType></div>
+			<div class=middle>
+			<TABLE style="WIDTh: 100%">
+			  <TBODY>
+			  <TR>
+				<TD style="TEXT-ALIGN: right; WIDTh: 80px">支付方式：</TD>
+				<TD>在线支付</TD></TR>
+			  <TR>
+				<TD style="TEXT-ALIGN: right">配送方式：</TD>
+				<TD>快递运输</TD></TR>
+			  <TR>
+				<TD style="TEXT-ALIGN: right">运　　费：</TD>
+				<TD>0.00元<SPAN style="COLOR: red">(免运费)</SPAN></TD></TR>
+			  <TR style="DISPLAY: none">
+				<TD style="TEXT-ALIGN: right">送货日期：</TD>
+				<TD style="COLOR: red">{CodTime}</TD></TR>
+			  <TR style="DISPLAY: none">
+				<TD style="TEXT-ALIGN: right">自提时间：</TD>
+				<TD style="COLOR: red">{PickTime}</TD></TR></TBODY></TABLE></div>
+			<div class=footsty></div></div></div><!--支付方式及配送方式结束-->
+			<!--发票信息开始-->
+<div id=part_invoice>
+<div class=o_show>
+<h1>发票信息&nbsp;<A onclick=showForm_invoice(this) href="javascript:void(0)" 
+clstag="checkout|keycount|jiesuan|xiugaifapiao">[修改]</A></h1>
+<div class=middle>
+<TABLE style="WIDTh: 100%; DISPLAY: none">
+  <TBODY>
+  <TR>
+    <TD 
+  style="TEXT-ALIGN: left; PADDING-LEFT: 22px">开取类型：&nbsp;默认开取</TD></TR></TBODY></TABLE>
+<TABLE style="WIDTh: 100%">
+  <TBODY>
+  <TR>
+    <TD style="TEXT-ALIGN: right; WIDTh: 82px">发票类型：</TD>
+    <TD>普通发票</TD></TR>
+  <TR>
+    <TD style="TEXT-ALIGN: right">发票抬头：</TD>
+    <TD>个人 </TD></TR>
+  <TR>
+    <TD style="TEXT-ALIGN: right">发票内容：</TD>
+    <TD>
+      <div><SPAN style="DISPLAY: none">非图书商品：</SPAN><SPAN>明细</SPAN></div>
+      <div><SPAN style="DISPLAY: none">图书商品：</SPAN><SPAN 
+      style="DISPLAY: none">不开发票</SPAN></div></TD></TR></TBODY></TABLE>
+<TABLE style="WIDTh: 100%; DISPLAY: none">
+  <TBODY>
+  <TR>
+    <TD 
+style="TEXT-ALIGN: left; PADDING-LEFT: 22px">不开发票</TD></TR></TBODY></TABLE></div>
+<div class=footsty></div></div></div><!--发票信息结束--><!--Cart信息开始-->
+<div id=part_cart></div><!--Cart信息开始--><!--有货先发开始-->
+<div 
+style="PADDING-BOTTOM: 8px; PADDING-LEFT: 30px; PADDING-RIGhT: 0px; COLOR: red; PADDING-TOP: 8px" 
+id=part_FirstInstockShip><INPUT id=chk_FirstInstockShip 
+onclick=SetTag_FirstInstockShip() type=checkbox>&nbsp;<LABEL 
+for=chk_FirstInstockShip>先发有货商品（如果订单部分商品缺货，优先配送有货商品）</LABEL> </div><!--有货先发结束-->
+					 
+		 
+		 </div>
+		 
+    
+	   
+	    <dl id="myCartTitle">
+        	<dt>确认挑选的商品</dt>
+        	<dd>”</dd>        
+	    </dl>
+		<div class="clear"><img src="#" width="1" height="1"></div>
+		<div id="myCartTable">
+		<table width="100%" border="0" cellspacing="" cellpadding="5">
+		  <tr>
+			<th>商品名称</th>
+			<th>单价（元）</th>
+			<th>数量</th>
+			<th>优惠</th>
+			<th>小计（元）</th>
+			<th>赠送积分</th>
+			<th>操作</th>
+		  </tr>
+		  <tr>
+			<td align="left"><div class="shpic" ><img src="images/img.jpg" width="80" height="80" /></div> <span class="shname"><a href="#">这在当时同类教科书中是很新颖的作法</a><br />
+		   <span class="fccc"> 颜色：极乐绿 尺码：170/</span>92A</span></td>
+			<td align="center">售 价 ：59.00<span class="fccc"><del> <br />
+		    市场价：
+          59.00 </del></span></td>
+			<td align="center"><a onclick="ajaxchange('changenum',new Array((parseInt($('#num_2073165120748').val())-1),'207316','51','20748'),false)" title="减-" style="cursor:pointer" class="btn_minus_s">-</a>  <input name="text" type="text" class="text_num"id="num_2073165120748" onchange="ajaxchange('changenum',new Array(this.value,'207316','51','20748'),false)" value="1" size="2" maxlength="2" autocomplete="off" now_data2073165120748="1"/>
+			<a onclick="ajaxchange('changenum',new Array((parseInt($('#num_2073165120748').val())+1),'207316','51','20748'),false)" title="加+" style="cursor:pointer" class="btn_plus_s">+</a></td>
+			<td align="center">0.00</td>
+			<td align="center">59.00</td>
+			<td align="center"><span class="cols col-6"><span>0 </span></span></td>
+			<td align="center"><span class="cols col-7"><a onclick="add_favorites('2073165120748','20731651148');" style="cursor:pointer">加入收藏</a> | <a onclick="ajaxchange('delete','common_id_20731651148','2073165120748')" style="cursor:pointer">删除</a></span></td>
+		  </tr>
+		  <tr><td colspan="7" align="right" class="zongj">总价：¥59.00元 -
+                        优惠：¥0.00元
+                        <input type="hidden" name="packagehidden" id="packagehidden" value=""> 
+                      = 商品总计(不含运费)：<span class="fred">¥59.00元</span>  获得：0 积分点</td>
+		  </tr>
+		  <tr><td colspan="7"><div class="left">
+					 <a href="javascript:;" class="btn_clear_cart" onclick="_clear_cart()"><img src="images/jxgw.png"></a>
+                    <a href="javascript:;" class="btn_clear_cart" onclick="_clear_cart()"><img src="images/qkgw.png"></a>
+                    </div>
+					 <div class="right" >
+					<a href="3.html" class="bg_cart btn_check_order" onclick="_check_cart_sub(0);">
+						<img src="images/tjdd.png">
+					</a>
+					</div>
+         </td></tr>
+		</table>
+		</div>
+		
+		
+		  	
+</div>
+	<!-- footer -->
+<div class="footer">
+	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+    <ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+   	<ul class="lbox nolbox">
+    	<li><a href="#">顾客必读</a></li>
+        <li><a href="#">订单的几种状态</a></li>
+        <li><a href="#">会员等级折扣</a></li>
+        <li><a href="#">积分奖励计划</a></li>
+        <li><a href="#">顾客必读</a></li>
+        <li><a href="#">商品退货保证</a></li>
+    </ul>
+
+
+
+
+</div>
+<div class="footer1">
+	<img src="images/footer1img.jpg" />
+	<img src="images/footer2img.jpg" /> 
+	<img src="images/footer3img.jpg" />
+	<img src="images/footer4img.jpg" />
+  	<img src="images/footer5img.jpg" />
+	<img src="images/footer6img.jpg" />           
+</div>
+<!-- footer2 -->
+<div class="footer2">
+版权所有：www.xubangyiliao.com<br />
+电话:029-62966051 87811277 传真：029-62966051 陕ICP备1109231号
+</div>
+</body>
+</html>
+

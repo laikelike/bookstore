@@ -1,0 +1,159 @@
+<html>
+<head>
+<style>
+<!--
+.wr{font-size: 12pt; line-height: 22px}
+.wr1 {	FONT-SIZE: 12px; LINE-HEIGHT: 200%}
+.wr2 {	FONT-SIZE: 14px; LINE-HEIGHT: 200%}
+.wr3 {	FONT-SIZE: 12px}
+.wr4 {	FONT-SIZE: 12px; LINE-HEIGHT: 150%}
+// -->
+</style>
+<title>清韵网上书店后台管理系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body bgcolor="#FFFFDB" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<p align="center">&nbsp;</p>
+<p align="center"><b class="wr4">非订单发货</b></p>
+<table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="wr4">图书编号：
+        
+      <input type="text" name="textfield" size="10">
+      [ <a href="bookStorageList.htm">浏览</a> ]</td>
+    <td class="wr4">图书数量：
+      <input type="text" name="textfield2" size="10">
+      [ 添加 ]</td>
+  </tr>
+</table>
+<table width="500" border="0" cellspacing="1" cellpadding="3" align="center" bgcolor="#000000">
+  <tr bgcolor="#FFFFDB" align="center"> 
+    <td class="wr4" width="67">图书编号</td>
+    <td class="wr4" width="222">书名</td>
+    <td class="wr4" width="64">单价</td>
+    <td class="wr4" width="46">数量</td>
+    <td class="wr4" width="65">小计</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" width="67">&nbsp;</td>
+    <td class="wr4" width="222">&nbsp;</td>
+    <td class="wr4" width="64">&nbsp;</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFDB"> 
+    <td class="wr4" colspan="3" align="right">合计：</td>
+    <td class="wr4" width="46">&nbsp;</td>
+    <td class="wr4" width="65">&nbsp;</td>
+  </tr>
+</table>
+<table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="wr4">付款金额： 
+      <input type="text" name="textfield3" size="10">
+    </td>
+    <td class="wr4">付款方式： 
+        <select name="select">
+        </select>
+    </td>
+  </tr>
+</table>
+<hr width="500" size="1">
+<table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="wr4" width="50%"><b>收货信息</b></td>
+    <td class="wr4" width="50%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td class="wr4" width="50%">收货地址所在省： 
+      <select name="select2">
+      </select>
+    </td>
+    <td class="wr4" width="50%">收货地址所在市： 
+      <select name="select3">
+      </select>
+    </td>
+  </tr>
+  <tr> 
+    <td class="wr4" width="50%">邮编： 
+      <input type="text" name="textfield32" size="10">
+    </td>
+    <td class="wr4" width="50%">电话： 
+      <input type="text" name="textfield33" size="10">
+    </td>
+  </tr>
+  <tr> 
+    <td class="wr4" colspan="2">收货人详细地址：
+      <textarea name="textfield332"></textarea>
+    </td>
+  </tr>
+</table>
+<hr width="500" size="1">
+<table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="wr4" width="50%">送货方式： 
+      <select name="select4">
+      </select>
+    </td>
+    <td class="wr4" width="50%">余额处理： 
+      <select name="select4">
+      </select>
+    </td>
+  </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="1" align="center" height="21" width="163">
+  <tr> 
+    <td width="74">&nbsp;</td>
+    <td width="15">&nbsp;</td>
+    <td width="74">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="images/h08.gif" class="wr4" width="74"> 
+      <div align="center">确定</div>
+    </td>
+    <td class="wr4" width="15">&nbsp;</td>
+    <td background="images/h08.gif" class="wr4" width="74"> 
+      <div align="center">取消</div>
+    </td>
+  </tr>
+</table>
+      
+      </body>
+</html>
+<script ></script>
